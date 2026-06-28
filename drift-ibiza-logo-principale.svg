@@ -1,0 +1,15 @@
+<svg width="420" height="100" viewBox="0 0 420 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="420" height="100" rx="0" fill="#0F0A1E"/>
+  <!-- Icona -->
+  <rect x="16" y="14" width="72" height="72" rx="14" fill="#0F0A1E"/>
+  <path d="M22 66 C28 50, 44 38, 64 40 L70 40 L64 48 C50 48, 38 56, 36 68 Z" fill="#1D9E75"/>
+  <path d="M22 74 C30 68, 46 65, 68 69" stroke="#C2F227" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <!-- Testo -->
+  <text x="106" y="62" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="500" fill="#FFFFFF" letter-spacing="-0.5">DRIFT</text>
+  <!-- Linea sinistra -->
+  <line x1="106" y1="76" x2="128" y2="76" stroke="#1D9E75" stroke-width="1.5"/>
+  <!-- IBIZA -->
+  <text x="133" y="80" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="500" fill="#1D9E75" letter-spacing="4">IBIZA</text>
+  <!-- Linea destra -->
+  <line x1="183" y1="76" x2="205" y2="76" stroke="#1D9E75" stroke-width="1.5"/>
+</svg>

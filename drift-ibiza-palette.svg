@@ -1,0 +1,48 @@
+<svg width="600" height="280" viewBox="0 0 600 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="280" fill="#FFFFFF"/>
+  <!-- Titolo -->
+  <text x="30" y="36" font-family="Georgia, serif" font-size="18" font-weight="500" fill="#0F0A1E">Drift Ibiza — Brand Colors</text>
+
+  <!-- Swatches riga 1 -->
+  <!-- Midnight -->
+  <rect x="30" y="56" width="80" height="80" rx="10" fill="#0F0A1E"/>
+  <text x="30" y="152" font-family="Arial, sans-serif" font-size="11" font-weight="500" fill="#0F0A1E">Midnight</text>
+  <text x="30" y="166" font-family="Arial, sans-serif" font-size="10" fill="#888780">#0F0A1E</text>
+
+  <!-- Navy -->
+  <rect x="126" y="56" width="80" height="80" rx="10" fill="#1A0A33"/>
+  <text x="126" y="152" font-family="Arial, sans-serif" font-size="11" font-weight="500" fill="#0F0A1E">Navy</text>
+  <text x="126" y="166" font-family="Arial, sans-serif" font-size="10" fill="#888780">#1A0A33</text>
+
+  <!-- Ibiza Teal -->
+  <rect x="222" y="56" width="80" height="80" rx="10" fill="#1D9E75"/>
+  <text x="222" y="152" font-family="Arial, sans-serif" font-size="11" font-weight="500" fill="#0F0A1E">Ibiza Teal</text>
+  <text x="222" y="166" font-family="Arial, sans-serif" font-size="10" fill="#888780">#1D9E75</text>
+
+  <!-- Acqua -->
+  <rect x="318" y="56" width="80" height="80" rx="10" fill="#5DCAA5"/>
+  <text x="318" y="152" font-family="Arial, sans-serif" font-size="11" font-weight="500" fill="#0F0A1E">Acqua</text>
+  <text x="318" y="166" font-family="Arial, sans-serif" font-size="10" fill="#888780">#5DCAA5</text>
+
+  <!-- Lime Strike -->
+  <rect x="414" y="56" width="80" height="80" rx="10" fill="#C2F227"/>
+  <text x="414" y="152" font-family="Arial, sans-serif" font-size="11" font-weight="500" fill="#0F0A1E">Lime Strike</text>
+  <text x="414" y="166" font-family="Arial, sans-serif" font-size="10" fill="#888780">#C2F227</text>
+
+  <!-- Riga 2 -->
+  <!-- Sand -->
+  <rect x="30" y="186" width="80" height="56" rx="10" fill="#F5F2ED" stroke="#E0DDD6" stroke-width="1"/>
+  <text x="30" y="258" font-family="Arial, sans-serif" font-size="11" font-weight="500" fill="#0F0A1E">Sand</text>
+  <text x="30" y="272" font-family="Arial, sans-serif" font-size="10" fill="#888780">#F5F2ED</text>
+
+  <!-- White -->
+  <rect x="126" y="186" width="80" height="56" rx="10" fill="#FFFFFF" stroke="#E0DDD6" stroke-width="1"/>
+  <text x="126" y="258" font-family="Arial, sans-serif" font-size="11" font-weight="500" fill="#0F0A1E">White</text>
+  <text x="126" y="272" font-family="Arial, sans-serif" font-size="10" fill="#888780">#FFFFFF</text>
+
+  <!-- Font info -->
+  <text x="240" y="210" font-family="Georgia, serif" font-size="22" font-weight="500" fill="#0F0A1E">Playfair Display</text>
+  <text x="240" y="230" font-family="Arial, sans-serif" font-size="12" fill="#888780">Heading / Logo</text>
+  <text x="240" y="258" font-family="Arial, sans-serif" font-size="16" fill="#0F0A1E">Inter Regular 400 / 500</text>
+  <text x="240" y="274" font-family="Arial, sans-serif" font-size="12" fill="#888780">Body / UI</text>
+</svg>
