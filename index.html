@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0F0A1E">
+
+  <title>Drift Ibiza — Private Jet Ski Experiences in Ibiza</title>
+  <meta name="description" content="Private jet ski experiences in Ibiza. Sea-Doo RXTx 300, up to 3 people. Book via WhatsApp.">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://driftibiza.com">
+  <meta property="og:site_name"   content="Drift Ibiza">
+  <meta property="og:title"       content="Drift Ibiza — Private Jet Ski Experiences in Ibiza">
+  <meta property="og:description" content="Your hour of freedom on the sea. Private jet ski experiences in Ibiza.">
+  <!-- REPLACE: og:image → upload a 1200×630px hero photo after shooting -->
+  <meta property="og:image"        content="https://driftibiza.com/og-image.jpg">
+  <meta property="og:image:width"  content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="drift-ibiza-icona-scura.svg">
+
+  <!-- Google Fonts: Playfair Display (upright 500 + italic 400/500) + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   DRIFT IBIZA — Premium Edition
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  --midnight: #0F0A1E;
+  --navy:     #1A0A33;
+  --teal:     #1D9E75;
+  --acqua:    #5DCAA5;
+  --lime:     #C2F227;
+  --sand:     #F5F2ED;
+  --white:    #FFFFFF;
+  --font-h: 'Playfair Display', Georgia, serif;
+  --font-b: 'Inter', system-ui, -apple-system, sans-serif;
+  --container: 1100px;
+  --header-h:  60px;
+  --r:  20px;
+  --rs: 12px;
+  --ease: 0.2s cubic-bezier(0.16,1,0.3,1);
+  --ease-spring: 0.5s cubic-bezier(0.16,1,0.3,1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: var(--font-b);
+  background: var(--midnight);
+  color: var(--white);
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+@media (hover: hover) and (pointer: fine) { body { cursor: none; } }
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+button { font-family: inherit; }
+@media (hover: hover) and (pointer: fine) { button { cursor: none; } }
+::selection { background: var(--teal); color: #fff; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+:focus-visible { outline: 2px solid var(--lime); outline-offset: 3px; border-radius: 4px; }
+
+.container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 20px; }
+
+.section-title {
+  font-family: var(--font-h);
+  font-weight: 500;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.section-sub { color: var(--acqua); font-size: 1rem; margin-bottom: 2.5rem; text-align: center; }
+
+/* ── Eyebrow ── */
+.eyebrow {
+  display: block;
+  font-family: var(--font-b);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* ── Custom cursor ── */
+.cursor-dot {
+  position: fixed;
+  top: 0; left: 0;
+  width: 20px; height: 20px;
+  margin-left: -10px; margin-top: -10px;
+  border: 1.5px solid rgba(255,255,255,0.7);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  will-change: transform;
+  transition: width 0.22s, height 0.22s, margin 0.22s, background 0.22s, border-color 0.22s, opacity 0.3s;
+  display: none;
+}
+@media (hover: hover) and (pointer: fine) { .cursor-dot { display: block; } }
+.cursor-dot--hover {
+  width: 32px; height: 32px;
+  margin-left: -16px; margin-top: -16px;
+  background: rgba(29,158,117,0.3);
+  border-color: var(--teal);
+}
+
+/* ── Buttons ── */
+.btn-wa {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: var(--teal);
+  color: var(--white);
+  font-family: var(--font-b);
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: var(--rs);
+  border: 2px solid var(--teal);
+  box-shadow: 0 0 0 0 rgba(29,158,117,0);
+  transition: background var(--ease), border-color var(--ease), color var(--ease), transform var(--ease), box-shadow 0.35s cubic-bezier(0.16,1,0.3,1);
+  white-space: nowrap;
+  line-height: 1;
+  cursor: none;
+}
+@media (hover: none) { .btn-wa { cursor: pointer; } }
+.btn-wa:hover, .btn-wa:focus-visible {
+  background: var(--acqua); border-color: var(--acqua);
+  box-shadow: 0 0 28px rgba(29,158,117,0.45);
+}
+.btn-wa:active { transform: scale(0.98); }
+.btn-wa--outline { background: transparent; color: var(--white); border-color: rgba(255,255,255,0.25); }
+.btn-wa--outline:hover, .btn-wa--outline:focus-visible { background: var(--teal); border-color: var(--teal); }
+.btn-wa--ghost { background: transparent; border-color: var(--acqua); color: var(--acqua); }
+.btn-wa--ghost:hover, .btn-wa--ghost:focus-visible { background: var(--acqua); color: var(--midnight); }
+.btn-wa--large { padding: 19px 44px; font-size: 1.125rem; border-radius: 100px; }
+.btn-wa--sticky { border-radius: 0; padding: 17px 24px; font-size: 1.0625rem; width: 100%; }
+.wa-icon { width: 20px; height: 20px; flex-shrink: 0; }
+
+/* ── Header ── */
+.site-header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 200;
+  height: var(--header-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: background 0.4s ease, border-color 0.4s ease;
+}
+.site-header--scrolled {
+  background: rgba(15,10,30,0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom-color: rgba(255,255,255,0.06);
+}
+.header-logo img {
+  height: 36px; width: auto;
+  transition: height 0.4s ease, filter 0.4s ease;
+  filter: drop-shadow(0 1px 10px rgba(0,0,0,0.7));
+}
+.site-header--scrolled .header-logo img {
+  height: 30px;
+  filter: drop-shadow(0 1px 4px rgba(0,0,0,0.4));
+}
+.lang-switcher {
+  display: flex; align-items: center; gap: 2px;
+  padding: 3px;
+  background: rgba(15,10,30,0.4);
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 100px;
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+}
+.lang-btn {
+  background: none; border: none;
+  color: rgba(255,255,255,0.72);
+  font-family: var(--font-b); font-weight: 600;
+  font-size: 0.78rem; letter-spacing: 0.06em;
+  padding: 6px 13px; border-radius: 100px;
+  line-height: 1;
+  transition: color var(--ease), background var(--ease), box-shadow var(--ease);
+  cursor: none;
+}
+@media (hover: none) { .lang-btn { cursor: pointer; } }
+.lang-btn:hover { color: var(--white); }
+.lang-btn--active {
+  color: var(--white); background: var(--teal);
+  box-shadow: 0 2px 8px rgba(29,158,117,0.45);
+}
+
+/* ── Hero ── */
+.hero {
+  position: relative;
+  min-height: 100svh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: calc(var(--header-h) + 48px) 20px 120px;
+  background: #0F0A1E;
+  overflow: hidden;
+}
+.hero-video {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  z-index: 0; pointer-events: none;
+}
+.hero-overlay {
+  position: absolute; inset: 0; z-index: 0;
+  background:
+    linear-gradient(to bottom, rgba(15,10,30,0.6) 0%, rgba(15,10,30,0.3) 50%, rgba(15,10,30,0.78) 100%),
+    radial-gradient(ellipse at 15% 75%, rgba(29,158,117,0.22) 0%, transparent 55%);
+}
+.hero-content {
+  position: relative; z-index: 1;
+  max-width: 700px; margin: 0 auto; text-align: center;
+}
+@media (min-width: 768px) { .hero-content { text-align: left; margin: 0; } }
+
+/* Hero eyebrow */
+.hero-eyebrow {
+  display: block;
+  font-family: var(--font-b);
+  font-size: 0.72rem; font-weight: 500;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: rgba(93,202,165,0.85);
+  margin-bottom: 18px;
+  opacity: 0; transform: translateY(10px);
+  animation: hero-eyebrow-in 0.7s cubic-bezier(0.16,1,0.3,1) 0.2s forwards;
+}
+@keyframes hero-eyebrow-in { to { opacity: 1; transform: translateY(0); } }
+
+/* Hero title */
+.hero-title {
+  font-family: var(--font-h); font-weight: 500;
+  font-size: clamp(2.1rem, 8vw, 4rem);
+  line-height: 1.06; letter-spacing: -0.02em;
+  margin-bottom: 1.1rem;
+}
+.hero-title-em {
+  font-style: italic; font-weight: 400;
+  background: linear-gradient(120deg, var(--acqua) 0%, var(--lime) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-sub {
+  font-family: var(--font-h); font-style: italic;
+  font-size: clamp(1.05rem, 3vw, 1.25rem);
+  color: var(--acqua); margin-bottom: 2.2rem; letter-spacing: 0.01em;
+}
+.hero-cta { font-size: 1.0625rem; padding: 16px 36px; border-radius: 100px; }
+
+/* Scroll line indicator */
+.hero-scroll-line {
+  position: absolute; bottom: 40px; left: 50%;
+  transform: translateX(-50%);
+  width: 1px; height: 44px; overflow: hidden;
+  opacity: 1; transition: opacity 0.5s ease; z-index: 2;
+}
+.hero-scroll-line.hidden { opacity: 0; }
+.hero-scroll-line::before {
+  content: '';
+  display: block; width: 100%; height: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.55), transparent);
+  animation: scroll-shimmer 1.8s ease-in-out infinite;
+}
+@keyframes scroll-shimmer {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(200%); }
+}
+
+/* Ambient blobs */
+.hero-blob {
+  position: absolute; border-radius: 50%;
+  pointer-events: none; filter: blur(80px);
+  will-change: transform; z-index: 0;
+}
+.hero-blob--1 {
+  width: 420px; height: 420px;
+  background: radial-gradient(circle, rgba(29,158,117,0.28) 0%, transparent 70%);
+  top: -60px; left: -80px;
+  animation: blob-float 14s ease-in-out infinite;
+}
+.hero-blob--2 {
+  width: 340px; height: 340px;
+  background: radial-gradient(circle, rgba(29,158,117,0.15) 0%, transparent 70%);
+  bottom: 0; right: -60px;
+  animation: blob-float 18s ease-in-out infinite reverse;
+}
+.hero-blob--3 {
+  width: 240px; height: 240px;
+  background: radial-gradient(circle, rgba(93,202,165,0.10) 0%, transparent 70%);
+  top: 45%; left: 55%;
+  animation: blob-float 22s ease-in-out infinite 3s;
+}
+@keyframes blob-float {
+  0%, 100% { transform: translate(0,0) scale(1); }
+  33%       { transform: translate(24px,-18px) scale(1.06); }
+  66%       { transform: translate(-16px,14px) scale(0.96); }
+}
+
+/* ── Stats strip ── */
+.stats-strip {
+  background: rgba(255,255,255,0.025);
+  border-top: 1px solid rgba(93,202,165,0.12);
+  border-bottom: 1px solid rgba(93,202,165,0.12);
+  padding: 36px 20px;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 0;
+  max-width: var(--container); margin: 0 auto;
+}
+@media (min-width: 640px) { .stats-grid { grid-template-columns: repeat(4, 1fr); gap: 0; } }
+.stat-item {
+  display: flex; flex-direction: column;
+  align-items: center; text-align: center;
+  padding: 0 20px; position: relative;
+}
+@media (min-width: 640px) {
+  .stat-item + .stat-item::before {
+    content: '';
+    position: absolute; left: 0; top: 10%; bottom: 10%;
+    width: 1px; background: rgba(255,255,255,0.1);
+  }
+}
+.stat-value {
+  font-family: var(--font-h);
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
+  font-weight: 500; color: var(--white);
+  line-height: 1; margin-bottom: 8px;
+  display: flex; align-items: baseline; gap: 3px;
+}
+.stat-prefix {
+  font-family: var(--font-b); font-size: 1rem;
+  font-weight: 400; color: rgba(255,255,255,0.55);
+}
+.stat-unit {
+  font-family: var(--font-b); font-size: 1.1rem;
+  font-weight: 500; color: var(--acqua);
+}
+.stat-label {
+  font-family: var(--font-b); font-size: 0.65rem;
+  font-weight: 500; letter-spacing: 0.15em;
+  text-transform: uppercase; color: rgba(93,202,165,0.75);
+}
+
+/* ── Experience ── */
+.experience { padding: 88px 0; background: var(--navy); }
+.experience .section-title { margin-bottom: 2rem; }
+.exp-grid { display: grid; gap: 20px; }
+@media (min-width: 768px) { .exp-grid { grid-template-columns: repeat(3, 1fr); } }
+.exp-card {
+  border-radius: var(--r); overflow: hidden;
+  position: relative;
+  transition: transform 0.35s cubic-bezier(0.16,1,0.3,1),
+              box-shadow 0.35s cubic-bezier(0.16,1,0.3,1);
+}
+.exp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+.exp-img {
+  width: 100%; aspect-ratio: 4/3; overflow: hidden;
+  position: relative; background: #0a1520;
+}
+.exp-img img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center 40%; display: block;
+  transition: transform 0.7s cubic-bezier(0.16,1,0.3,1);
+}
+.exp-card:hover .exp-img img { transform: scale(1.06); }
+/* Text overlaid on image with gradient from bottom */
+.exp-body {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 40px 22px 22px;
+  background: linear-gradient(to top, rgba(10,6,20,0.92) 0%, rgba(10,6,20,0.6) 55%, transparent 100%);
+}
+.exp-label { font-family: var(--font-h); font-size: 1.3rem; font-weight: 500; color: var(--white); margin-bottom: 5px; }
+.exp-desc  { color: rgba(255,255,255,0.8); font-size: 0.9rem; line-height: 1.45; }
+
+/* ── Packages ── */
+.packages { padding: 88px 0; background: var(--midnight); }
+.packages .section-title, .packages .section-sub { text-align: center; }
+.pkg-grid { display: grid; gap: 20px; margin-bottom: 12px; }
+@media (min-width: 640px) { .pkg-grid { grid-template-columns: repeat(3, 1fr); } }
+.pkg-card {
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px; padding: 32px 26px;
+  display: flex; flex-direction: column; gap: 14px;
+  will-change: transform, box-shadow;
+  transition: all 0.35s cubic-bezier(0.16,1,0.3,1);
+}
+.pkg-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 48px rgba(0,0,0,0.4);
+  border-color: rgba(93,202,165,0.4);
+}
+.pkg-card--featured {
+  border-color: var(--teal);
+  background: rgba(29,158,117,0.07);
+  box-shadow: 0 0 30px rgba(29,158,117,0.15);
+}
+.pkg-card--featured:hover {
+  box-shadow: 0 24px 48px rgba(0,0,0,0.4), 0 0 30px rgba(29,158,117,0.22);
+  border-color: var(--teal);
+}
+.pkg-badge {
+  align-self: flex-start;
+  background: var(--lime); color: var(--midnight);
+  font-weight: 600; font-size: 0.72rem;
+  letter-spacing: 0.07em; text-transform: uppercase;
+  padding: 5px 14px; border-radius: 100px;
+}
+.pkg-header { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.pkg-name { font-family: var(--font-h); font-size: 1.5rem; font-weight: 500; }
+.pkg-dur  { font-size: 0.8rem; color: var(--acqua); }
+.pkg-price {
+  display: flex; align-items: flex-start; gap: 2px;
+  font-family: var(--font-h); font-weight: 500;
+  line-height: 1;
+  transition: transform 0.35s cubic-bezier(0.16,1,0.3,1);
+}
+.pkg-card:hover .pkg-price { transform: scale(1.05); }
+.pkg-price-num { font-size: 2.8rem; }
+.pkg-price-cur { font-family: var(--font-b); font-size: 1.4rem; margin-top: 0.35rem; opacity: 0.7; }
+.pkg-price-star { font-family: var(--font-b); font-size: 1rem; color: rgba(255,255,255,0.45); vertical-align: super; }
+.pkg-desc { color: rgba(255,255,255,0.65); font-size: 0.9375rem; flex: 1; }
+.pkg-card { cursor: pointer; }
+.pkg-card.pkg-selected {
+  border-color: var(--teal) !important;
+  box-shadow: 0 0 0 2px var(--teal), 0 24px 48px rgba(0,0,0,0.4) !important;
+  transform: translateY(-8px);
+}
+.pkg-card--featured.pkg-selected {
+  box-shadow: 0 0 0 2px var(--teal), 0 24px 48px rgba(0,0,0,0.4), 0 0 30px rgba(29,158,117,0.22) !important;
+}
+.pkg-select-indicator {
+  display: flex; align-items: center; justify-content: center;
+  width: 22px; height: 22px;
+  border: 2px solid rgba(255,255,255,0.25);
+  border-radius: 50%;
+  align-self: flex-end;
+  margin-top: auto;
+  transition: background var(--ease), border-color var(--ease);
+  flex-shrink: 0;
+}
+.pkg-card.pkg-selected .pkg-select-indicator {
+  background: var(--teal); border-color: var(--teal);
+}
+.pkg-select-indicator::after {
+  content: '';
+  width: 6px; height: 6px;
+  background: white; border-radius: 50%;
+  opacity: 0; transition: opacity var(--ease);
+}
+.pkg-card.pkg-selected .pkg-select-indicator::after { opacity: 1; }
+
+.pkg-cta-wrap {
+  display: flex; justify-content: center;
+  padding-top: 28px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.45s cubic-bezier(0.16,1,0.3,1), padding-top 0.45s cubic-bezier(0.16,1,0.3,1);
+}
+.pkg-cta-wrap--visible { max-height: 120px; padding-top: 28px; }
+.pkg-cta-wrap .btn-wa { padding: 16px 40px; border-radius: 100px; font-size: 1.0625rem; }
+.pkg-disclaimer { text-align: center; font-size: 0.8rem; color: rgba(255,255,255,0.38); margin-bottom: 48px; padding: 0 8px; }
+.pkg-custom { text-align: center; padding: 36px 24px; border: 1px dashed rgba(93,202,165,0.3); border-radius: var(--r); }
+.pkg-custom p { color: rgba(255,255,255,0.7); margin-bottom: 18px; font-size: 1rem; }
+
+/* ── How it works ── */
+.how-it-works { padding: 88px 0; background: var(--navy); overflow: hidden; }
+.how-it-works .section-title { margin-bottom: 3rem; }
+.how-grid {
+  display: grid; gap: 52px; position: relative;
+}
+@media (min-width: 640px) {
+  .how-grid { grid-template-columns: repeat(3, 1fr); gap: 0; }
+  .how-grid::before {
+    content: '';
+    position: absolute; top: 14px;
+    left: calc(16.66% + 10px); right: calc(16.66% + 10px);
+    height: 1px;
+    background: repeating-linear-gradient(to right, rgba(29,158,117,0.4) 0, rgba(29,158,117,0.4) 6px, transparent 6px, transparent 14px);
+  }
+}
+.how-step {
+  text-align: center; position: relative; padding: 0 20px;
+}
+.how-step-bg-num {
+  position: absolute; top: -44px; left: 50%; transform: translateX(-50%);
+  font-family: var(--font-h);
+  font-size: clamp(5rem, 12vw, 8.5rem);
+  font-weight: 500; color: rgba(255,255,255,0.055);
+  line-height: 1; user-select: none; pointer-events: none; white-space: nowrap;
+}
+.how-step-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--teal); margin: 0 auto 22px;
+  box-shadow: 0 0 14px rgba(29,158,117,0.7); position: relative; z-index: 1;
+}
+.how-label { font-family: var(--font-b); font-size: 1.05rem; font-weight: 600; margin-bottom: 10px; }
+.how-desc  { color: rgba(255,255,255,0.62); font-size: 0.9rem; line-height: 1.65; }
+
+/* Mobile: vertical connector */
+@media (max-width: 639px) {
+  .how-grid::before { display: none; }
+  .how-step { text-align: left; padding: 0 0 0 40px; }
+  .how-step-dot { position: absolute; left: 0; top: 5px; margin: 0; }
+  .how-step:not(:last-child)::after {
+    content: '';
+    position: absolute; left: 4px; top: 18px; bottom: -48px; width: 2px;
+    background: repeating-linear-gradient(to bottom, rgba(29,158,117,0.35) 0, rgba(29,158,117,0.35) 6px, transparent 6px, transparent 12px);
+  }
+  .how-step-bg-num { display: none; }
+}
+
+/* ── Details ── */
+.details { padding: 88px 0; background: var(--midnight); color: var(--white); }
+.details .section-title { color: var(--white); margin-bottom: 2rem; }
+.details-list { display: flex; flex-direction: column; gap: 22px; max-width: 560px; margin: 0 auto; }
+.details-item { display: flex; align-items: flex-start; gap: 16px; font-size: 1.0625rem; line-height: 1.5; text-align: left; }
+.details-icon { color: var(--teal); flex-shrink: 0; margin-top: 2px; }
+
+/* ── Proof / Gallery ── */
+.proof { padding: 88px 0; background: var(--midnight); }
+.proof .section-title { margin-bottom: 2rem; }
+.proof-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 24px; }
+@media (min-width: 640px) { .proof-grid { gap: 20px; } }
+.proof-photo {
+  aspect-ratio: 1; border-radius: var(--rs); overflow: hidden;
+  background: #0a1520; position: relative;
+}
+.proof-photo img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center; display: block;
+  transition: transform 0.7s cubic-bezier(0.16,1,0.3,1);
+}
+.proof-photo:hover img { transform: scale(1.06); }
+.proof-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(15,10,30,0.88) 0%, transparent 55%);
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 14px 16px;
+  opacity: 0; transition: opacity 0.3s ease;
+}
+.proof-photo:hover .proof-overlay { opacity: 1; }
+.proof-overlay-name {
+  font-family: var(--font-h); font-style: italic; font-size: 1rem;
+  color: var(--white); display: block; line-height: 1.2;
+  transform: translateY(8px); transition: transform 0.3s ease;
+}
+.proof-overlay-sub {
+  font-family: var(--font-b); font-size: 0.6rem; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--acqua);
+  display: block; margin-top: 3px;
+  transform: translateY(8px); transition: transform 0.35s ease 0.04s;
+}
+.proof-photo:hover .proof-overlay-name,
+.proof-photo:hover .proof-overlay-sub { transform: translateY(0); }
+
+/* ── CTA Final ── */
+.cta-final {
+  padding: 120px 0; background: var(--midnight);
+  text-align: center; position: relative; overflow: hidden;
+}
+.cta-glow {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 50% 60%, rgba(29,158,117,0.14) 0%, transparent 65%);
+  pointer-events: none;
+}
+.cta-final-title {
+  font-family: var(--font-h); font-weight: 500;
+  font-size: clamp(3rem, 10vw, 7.5rem);
+  line-height: 1.04; margin-bottom: 2.5rem;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #ffffff 30%, var(--acqua) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative; z-index: 1;
+}
+
+/* ── Footer ── */
+.site-footer {
+  padding: 48px 0 96px; background: var(--midnight);
+  border-top: 1px solid rgba(255,255,255,0.07); text-align: center;
+}
+@media (min-width: 768px) { .site-footer { padding-bottom: 56px; } }
+.footer-logo { margin: 0 auto 16px; height: 38px; width: auto; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4)); }
+.footer-tagline { color: rgba(255,255,255,0.45); font-size: 0.875rem; margin-bottom: 24px; }
+.footer-social {
+  display: flex; align-items: center; justify-content: center;
+  flex-wrap: wrap; gap: 12px 16px; margin-bottom: 32px;
+  font-size: 0.875rem; color: rgba(255,255,255,0.45);
+}
+.footer-social-link { display: inline-flex; align-items: center; gap: 6px; color: var(--acqua); font-weight: 500; transition: color var(--ease); }
+.footer-social-link:hover { color: var(--white); }
+.footer-legal { font-size: 0.8rem; color: rgba(255,255,255,0.28); }
+
+/* ── Sticky WA ── */
+.sticky-wa {
+  position: fixed; inset: auto 0 0 0;
+  z-index: 150;
+  transform: translateY(100%);
+  transition: transform 0.35s cubic-bezier(0.16,1,0.3,1);
+}
+.sticky-wa--visible { transform: translateY(0); }
+.btn-wa--sticky { width: 100%; border-radius: 0; padding: 17px 24px; font-size: 1.0625rem; }
+
+@media (min-width: 768px) {
+  .sticky-wa { inset: auto 28px 28px auto; width: auto; }
+  .btn-wa--sticky {
+    border-radius: 100px; padding: 14px 28px; width: auto;
+    box-shadow: 0 4px 24px rgba(29,158,117,0.4);
+  }
+}
+/* Icon-only on very small phones */
+@media (max-width: 380px) {
+  .sticky-wa-text { display: inline; }
+  .btn-wa--sticky { border-radius: 0; width: 100%; padding: 17px 24px; }
+  .sticky-wa { inset: auto 0 0 0; width: 100%; }
+}
+
+/* WA ripple */
+@keyframes wa-ripple {
+  0%   { box-shadow: 0 4px 24px rgba(29,158,117,0.4), 0 0 0 0 rgba(29,158,117,0.55); }
+  70%  { box-shadow: 0 4px 24px rgba(29,158,117,0.4), 0 0 0 16px rgba(29,158,117,0); }
+  100% { box-shadow: 0 4px 24px rgba(29,158,117,0.4), 0 0 0 0 rgba(29,158,117,0); }
+}
+.sticky-wa--visible .btn-wa--sticky { animation: wa-ripple 3.5s cubic-bezier(0.16,1,0.3,1) infinite; }
+.btn-wa--sticky:hover { transform: scale(1.04); filter: brightness(1.1); animation: none; }
+
+/* ── Scroll reveal ── */
+.reveal {
+  opacity: 0; transform: translateY(24px);
+  transition: opacity 0.6s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1);
+}
+.reveal--visible { opacity: 1; transform: translateY(0); }
+.reveal--delay-1 { transition-delay: 0.10s; }
+.reveal--delay-2 { transition-delay: 0.20s; }
+.reveal--delay-3 { transition-delay: 0.30s; }
+
+/* How-step slide from right */
+.reveal-right {
+  opacity: 0; transform: translateX(30px);
+  transition: opacity 0.6s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1);
+}
+.reveal-right.reveal--visible { opacity: 1; transform: translateX(0); }
+
+/* ── Lang switch fade ── */
+[data-i18n] { transition: opacity 0.18s ease; }
+[data-i18n].lang-fade { opacity: 0; }
+
+/* ═══ LIQUID GLASS ═══ */
+.liquid-glass {
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  box-shadow: inset 0 1px 1px rgba(255,255,255,0.08);
+  position: relative; overflow: hidden;
+}
+.liquid-glass::before {
+  content: ''; position: absolute; inset: 0;
+  border-radius: inherit; padding: 1.4px;
+  background: linear-gradient(180deg,
+    rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.1) 20%,
+    rgba(255,255,255,0) 40%, rgba(255,255,255,0) 60%,
+    rgba(255,255,255,0.1) 80%, rgba(255,255,255,0.35) 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+  pointer-events: none; z-index: 0;
+}
+.liquid-glass > * { position: relative; z-index: 1; }
+/* Header keeps its dark glass background despite .liquid-glass */
+.site-header.liquid-glass { background: rgba(15,10,30,0.88); }
+/* Featured package keeps its teal tint despite .liquid-glass */
+.pkg-card--featured.liquid-glass { background: rgba(29,158,117,0.07); }
+.liquid-glass-strong::before {
+  content: ''; position: absolute; inset: 0;
+  border-radius: inherit; padding: 1.4px;
+  background: linear-gradient(180deg,
+    rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.2) 20%,
+    rgba(255,255,255,0) 40%, rgba(255,255,255,0) 60%,
+    rgba(255,255,255,0.2) 80%, rgba(255,255,255,0.5) 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+  pointer-events: none; z-index: 0;
+}
+
+/* ═══ FADING VIDEO ═══ */
+.hero-video { opacity: 0; transition: opacity 0.5s ease; }
+
+/* ═══ BLUR TEXT (hero title word-by-word) ═══ */
+.blur-word {
+  display: inline-block;
+  filter: blur(10px); opacity: 0; transform: translateY(40px);
+  transition: filter 0.65s cubic-bezier(0.16,1,0.3,1),
+              opacity 0.65s cubic-bezier(0.16,1,0.3,1),
+              transform 0.65s cubic-bezier(0.16,1,0.3,1);
+  will-change: filter, opacity, transform;
+}
+.blur-word.in { filter: blur(0); opacity: 1; transform: translateY(0); }
+/* Keep the teal→lime gradient on split words inside the italic em */
+.hero-title-em .blur-word {
+  background: linear-gradient(120deg, var(--acqua) 0%, var(--lime) 100%);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ═══ HERO LOAD-IN ═══ */
+.hero-load {
+  opacity: 0; filter: blur(8px); transform: translateY(16px);
+  transition: opacity 0.75s cubic-bezier(0.16,1,0.3,1),
+              filter 0.75s cubic-bezier(0.16,1,0.3,1),
+              transform 0.75s cubic-bezier(0.16,1,0.3,1);
+}
+.hero-load--in { opacity: 1; filter: blur(0); transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+  .blur-word { filter: none !important; opacity: 1 !important; transform: none !important; }
+  .hero-load { opacity: 1 !important; filter: none !important; transform: none !important; }
+  .hero-video { opacity: 1 !important; }
+}
+</style>
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+
+<!-- SVG Symbols -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="icon-wa" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </symbol>
+  <symbol id="icon-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+    <rect x="2" y="2" width="20" height="20" rx="5"/>
+    <circle cx="12" cy="12" r="4"/>
+    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+  </symbol>
+  <symbol id="icon-tt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
+  </symbol>
+  <symbol id="icon-jetski" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M2 17c2.5-3.5 6-5 10-5h2l3 3H2z"/>
+    <path d="M14 12l2-6h2l1 3.5"/>
+    <path d="M1 19.5c1.5 1 3.5 1.5 5.5 1s3.5-1 5.5-1 4.5.5 6 1"/>
+  </symbol>
+  <symbol id="icon-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+    <circle cx="12" cy="9" r="2.5"/>
+  </symbol>
+  <symbol id="icon-person" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+    <circle cx="12" cy="7" r="3.5"/>
+    <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+  </symbol>
+  <symbol id="icon-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 9l6 6 6-6"/>
+  </symbol>
+</svg>
+
+
+<!-- ════ HEADER ════ -->
+<header class="site-header" id="site-header">
+  <a href="#" class="header-logo" aria-label="Drift Ibiza — Home">
+    <img src="drift-ibiza-logo-chiaro.svg" alt="Drift Ibiza" height="36" width="auto">
+  </a>
+  <nav class="lang-switcher" aria-label="Language selector">
+    <button class="lang-btn" data-lang="it" aria-current="false">IT</button>
+    <button class="lang-btn" data-lang="en" aria-current="false">EN</button>
+    <button class="lang-btn" data-lang="es" aria-current="false">ES</button>
+  </nav>
+</header>
+
+
+<!-- ════ 1. HERO ════ -->
+<section class="hero" id="hero" aria-label="Hero">
+  <video class="hero-video" id="hero-video" autoplay muted playsinline preload="auto" poster="images/hero-poster.jpg">
+    <source src="videos/hero.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-blob hero-blob--1" aria-hidden="true"></div>
+  <div class="hero-blob hero-blob--2" aria-hidden="true"></div>
+  <div class="hero-blob hero-blob--3" aria-hidden="true"></div>
+  <div class="hero-content">
+    <span class="hero-eyebrow" data-i18n="hero_eyebrow">SEA-DOO RXTX 300 · SANTA EULALIA · IBIZA</span>
+    <h1 class="hero-title">
+      <span data-i18n="hero_title_main">Ibiza come non l'hai mai</span><br>
+      <em class="hero-title-em" data-i18n="hero_title_em">vissuta</em>
+    </h1>
+    <p class="hero-sub hero-load" data-i18n="hero_sub">La tua ora di libertà sul mare</p>
+    <a href="#" class="btn-wa hero-cta hero-load" data-whatsapp>
+      <svg class="wa-icon" aria-hidden="true"><use href="#icon-wa"/></svg>
+      <span data-i18n="cta_wa">Scrivici su WhatsApp</span>
+    </a>
+  </div>
+  <div class="hero-scroll-line" id="hero-scroll-indicator" aria-hidden="true"></div>
+</section>
+
+
+<!-- ════ STATS STRIP ════ -->
+<div class="stats-strip" aria-label="Drift Ibiza in numeri">
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="stat-value">
+        <span class="stat-num" data-count="300">300</span>
+        <span class="stat-unit">HP</span>
+      </div>
+      <div class="stat-label" data-i18n="stat1_label">Motore</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-value">
+        <span class="stat-num" data-count="3">3</span>
+      </div>
+      <div class="stat-label" data-i18n="stat2_label">Persone</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-value">
+        <span class="stat-num" data-count="100">100</span>
+        <span class="stat-unit">%</span>
+      </div>
+      <div class="stat-label" data-i18n="stat3_label">Privato</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-value">
+        <span class="stat-prefix">da </span>
+        <span class="stat-num" data-count="100">100</span>
+        <span class="stat-unit">€</span>
+      </div>
+      <div class="stat-label" data-i18n="stat4_label">a persona</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ════ 2. ESPERIENZA ════ -->
+<section class="experience" id="experience">
+  <div class="container">
+    <span class="eyebrow">L'Esperienza / The Experience</span>
+    <h2 class="section-title reveal" data-i18n="exp_title">The Experience</h2>
+    <div class="exp-grid">
+
+      <article class="exp-card reveal reveal--delay-1">
+        <div class="exp-img">
+          <img src="images/cala-segreta.jpg" alt="Vista POV dal Sea-Doo verso una cala rocciosa con acqua turchese" loading="lazy">
+          <div class="exp-body">
+            <h3 class="exp-label" data-i18n="exp1_label">Freedom</h3>
+            <p  class="exp-desc"  data-i18n="exp1_desc">No fixed route. Go where the sea takes you.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="exp-card reveal reveal--delay-2">
+        <div class="exp-img">
+          <img src="images/seadoo-porto-a.jpg" alt="Sea-Doo RXTx 300 ormeggiato al porto di Santa Eulalia" loading="lazy">
+          <div class="exp-body">
+            <h3 class="exp-label" data-i18n="exp2_label">Speed</h3>
+            <p  class="exp-desc"  data-i18n="exp2_desc">A Sea-Doo RXTx 300. Pure power on the water.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="exp-card reveal reveal--delay-3">
+        <div class="exp-img">
+          <img src="images/seadoo-porto-b.jpg" alt="Sea-Doo RXTx 300 con yacht e porto sullo sfondo" loading="lazy">
+          <div class="exp-body">
+            <h3 class="exp-label" data-i18n="exp3_label">Sunset</h3>
+            <p  class="exp-desc"  data-i18n="exp3_desc">Ibiza's golden hour, seen from the sea. Unforgettable.</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════ 3. PACCHETTI ════ -->
+<section class="packages" id="packages">
+  <div class="container">
+    <span class="eyebrow">Pacchetti / Packages</span>
+    <h2 class="section-title reveal" data-i18n="pkg_title">Choose your experience</h2>
+    <p  class="section-sub reveal reveal--delay-1" data-i18n="pkg_sub">Price per jet ski, up to 3 people</p>
+
+    <div class="pkg-grid">
+
+      <article class="pkg-card liquid-glass reveal reveal--delay-1" data-pkg="1">
+        <div class="pkg-header">
+          <span class="pkg-name" data-i18n="pkg1_name">Taste</span>
+          <span class="pkg-dur"  data-i18n="pkg1_dur">30 minutes</span>
+        </div>
+        <div class="pkg-price">
+          <span class="pkg-price-num">100</span><span class="pkg-price-cur">€</span>
+        </div>
+        <p class="pkg-desc" data-i18n="pkg1_desc">A quick taste of freedom</p>
+        <div class="pkg-select-indicator" aria-hidden="true"></div>
+      </article>
+
+      <article class="pkg-card pkg-card--featured liquid-glass reveal reveal--delay-2" data-pkg="2">
+        <span class="pkg-badge" data-i18n="pkg_badge">Most popular</span>
+        <div class="pkg-header">
+          <span class="pkg-name" data-i18n="pkg2_name">Classic</span>
+          <span class="pkg-dur"  data-i18n="pkg2_dur">1 hour</span>
+        </div>
+        <div class="pkg-price">
+          <span class="pkg-price-num">180</span><span class="pkg-price-cur">€</span>
+        </div>
+        <p class="pkg-desc" data-i18n="pkg2_desc">The full experience</p>
+        <div class="pkg-select-indicator" aria-hidden="true"></div>
+      </article>
+
+      <article class="pkg-card liquid-glass reveal reveal--delay-3" data-pkg="3">
+        <div class="pkg-header">
+          <span class="pkg-name" data-i18n="pkg3_name">Extended</span>
+          <span class="pkg-dur"  data-i18n="pkg3_dur">1.5 hours</span>
+        </div>
+        <!-- REPLACE: 250€ estimated — confirm with owner before launch -->
+        <div class="pkg-price">
+          <span class="pkg-price-num">250</span><span class="pkg-price-cur">€</span><span class="pkg-price-star" aria-label="estimated">*</span>
+        </div>
+        <p class="pkg-desc" data-i18n="pkg3_desc">More time, more sea, more sunset</p>
+        <div class="pkg-select-indicator" aria-hidden="true"></div>
+      </article>
+
+    </div>
+
+    <!-- Single shared CTA — appears after package selection -->
+    <div class="pkg-cta-wrap" id="pkg-cta-wrap">
+      <a href="#" class="btn-wa" id="pkg-cta-btn" data-whatsapp>
+        <svg class="wa-icon" aria-hidden="true"><use href="#icon-wa"/></svg>
+        <span data-i18n="pkg_cta">Book on WhatsApp</span>
+      </a>
+    </div>
+
+    <p class="pkg-disclaimer">* Prezzo stimato, da confermare / Estimated price, to be confirmed / Precio estimado, por confirmar</p>
+
+    <div class="pkg-custom">
+      <p data-i18n="pkg_custom_text">Looking for something else? Message us for a custom experience.</p>
+      <a href="#" class="btn-wa btn-wa--ghost" data-whatsapp>
+        <svg class="wa-icon" aria-hidden="true"><use href="#icon-wa"/></svg>
+        <span data-i18n="pkg_custom_cta">Message us</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════ 4. COME FUNZIONA ════ -->
+<section class="how-it-works" id="how">
+  <div class="container">
+    <span class="eyebrow">Come funziona / How it works</span>
+    <h2 class="section-title reveal" data-i18n="how_title">How it works</h2>
+    <div class="how-grid">
+
+      <div class="how-step reveal-right reveal--delay-1">
+        <div class="how-step-bg-num" aria-hidden="true">01</div>
+        <div class="how-step-dot" aria-hidden="true"></div>
+        <h3 class="how-label" data-i18n="how1_label">Message</h3>
+        <p  class="how-desc"  data-i18n="how1_desc">Send us a WhatsApp with your preferred day.</p>
+      </div>
+
+      <div class="how-step reveal-right reveal--delay-2">
+        <div class="how-step-bg-num" aria-hidden="true">02</div>
+        <div class="how-step-dot" aria-hidden="true"></div>
+        <h3 class="how-label" data-i18n="how2_label">Choose</h3>
+        <p  class="how-desc"  data-i18n="how2_desc">We agree on time, duration and meeting point.</p>
+      </div>
+
+      <div class="how-step reveal-right reveal--delay-3">
+        <div class="how-step-bg-num" aria-hidden="true">03</div>
+        <div class="how-step-dot" aria-hidden="true"></div>
+        <h3 class="how-label" data-i18n="how3_label">Ride</h3>
+        <p  class="how-desc"  data-i18n="how3_desc">We'll be waiting on the water. Just enjoy Ibiza.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════ 5. DETTAGLI PRATICI ════ -->
+<section class="details" id="details">
+  <div class="container">
+    <span class="eyebrow">Dettagli / Details</span>
+    <h2 class="section-title reveal" data-i18n="det_title">Practical details</h2>
+    <ul class="details-list">
+      <li class="details-item reveal reveal--delay-1">
+        <span class="details-icon" aria-hidden="true"><svg width="24" height="24"><use href="#icon-jetski"/></svg></span>
+        <span data-i18n="det1">Sea-Doo RXTx 300, up to 3 people.</span>
+      </li>
+      <li class="details-item reveal reveal--delay-2">
+        <span class="details-icon" aria-hidden="true"><svg width="24" height="24"><use href="#icon-pin"/></svg></span>
+        <span data-i18n="det2">Based in Santa Eulalia — we reach the area you prefer.</span>
+      </li>
+      <li class="details-item reveal reveal--delay-3">
+        <span class="details-icon" aria-hidden="true"><svg width="24" height="24"><use href="#icon-person"/></svg></span>
+        <span data-i18n="det3">Drive yourself or be accompanied: we'll show you everything.</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ════ 6. GALLERIA ════ -->
+<section class="proof" id="proof">
+  <div class="container">
+    <span class="eyebrow">Galleria / Gallery</span>
+    <h2 class="section-title" data-i18n="proof_title">Our experiences</h2>
+    <div class="proof-grid reveal" aria-label="Galleria foto Drift Ibiza">
+
+      <div class="proof-photo">
+        <img src="images/cala-segreta.jpg" alt="Vista POV dal Sea-Doo verso una cala segreta con acqua turchese" loading="lazy">
+        <div class="proof-overlay" aria-hidden="true">
+          <span class="proof-overlay-name">Cala Segreta</span>
+          <span class="proof-overlay-sub">IBIZA · ES</span>
+        </div>
+      </div>
+
+      <div class="proof-photo">
+        <img src="images/seadoo-porto-a.jpg" alt="Sea-Doo RXTx 300 al porto di Santa Eulalia" loading="lazy">
+        <div class="proof-overlay" aria-hidden="true">
+          <span class="proof-overlay-name">Porto di Santa Eulalia</span>
+          <span class="proof-overlay-sub">IBIZA · ES</span>
+        </div>
+      </div>
+
+      <div class="proof-photo">
+        <img src="images/seadoo-porto-b.jpg" alt="Sea-Doo RXTx 300 ormeggiato con yacht sullo sfondo" loading="lazy">
+        <div class="proof-overlay" aria-hidden="true">
+          <span class="proof-overlay-name">Sea-Doo RXTx 300</span>
+          <span class="proof-overlay-sub">IBIZA · ES</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════ 7. CTA FINALE ════ -->
+<section class="cta-final" id="cta">
+  <div class="cta-glow" aria-hidden="true"></div>
+  <div class="container">
+    <h2 class="cta-final-title reveal" data-i18n="cta_title">Ready to ride?</h2>
+    <a href="#" class="btn-wa btn-wa--large reveal reveal--delay-1" data-whatsapp>
+      <svg class="wa-icon" aria-hidden="true"><use href="#icon-wa"/></svg>
+      <span data-i18n="cta_wa">Message us on WhatsApp</span>
+    </a>
+  </div>
+</section>
+
+
+<!-- ════ 8. FOOTER ════ -->
+<footer class="site-footer">
+  <div class="container">
+    <img src="drift-ibiza-logo-chiaro.svg" alt="Drift Ibiza" class="footer-logo" height="38" width="auto">
+    <p class="footer-tagline" data-i18n="footer_tagline">Private experiences on the sea</p>
+    <div class="footer-social">
+      <span data-i18n="footer_follow">Follow us on</span>
+      <!-- REPLACE: href → https://instagram.com/YOUR_HANDLE -->
+      <a href="https://instagram.com/[INSTAGRAM_HANDLE]" target="_blank" rel="noopener noreferrer"
+         class="footer-social-link" aria-label="Follow Drift Ibiza on Instagram">
+        <svg width="18" height="18" aria-hidden="true"><use href="#icon-ig"/></svg>Instagram
+      </a>
+      <!-- REPLACE: href → https://tiktok.com/@YOUR_HANDLE -->
+      <a href="https://tiktok.com/@[TIKTOK_HANDLE]" target="_blank" rel="noopener noreferrer"
+         class="footer-social-link" aria-label="Follow Drift Ibiza on TikTok">
+        <svg width="18" height="18" aria-hidden="true"><use href="#icon-tt"/></svg>TikTok
+      </a>
+    </div>
+    <p class="footer-legal">© 2026 Drift Ibiza. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<!-- ════ STICKY WA ════ -->
+<div class="sticky-wa" id="sticky-wa">
+  <a href="#" class="btn-wa btn-wa--sticky" data-whatsapp aria-label="Contact us on WhatsApp">
+    <svg class="wa-icon" aria-hidden="true"><use href="#icon-wa"/></svg>
+    <span class="sticky-wa-text" data-i18n="sticky_cta">Scrivici ora</span>
+  </a>
+</div>
+
+
+<script>
+/* ═══════════════════════════════════════════════════════════════
+   DRIFT IBIZA — Script (Premium Edition)
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ─── CONFIG ────────────────────────────────────────────────────
+   ⚠️  REPLACE WHATSAPP_NUMBER with the real number.
+   Format: international, no + sign, no spaces.
+   Example: '34612345678'
+   ─────────────────────────────────────────────────────────────── */
+const WHATSAPP_NUMBER = '[NUMERO_WHATSAPP]';
+window.WHATSAPP_NUMBER = WHATSAPP_NUMBER;
+
+const WA_MESSAGES = {
+  it: "Ciao Drift Ibiza! Vorrei informazioni per un'esperienza in moto d'acqua 🌊",
+  en: "Hi Drift Ibiza! I'd like info about a jet ski experience 🌊",
+  es: "¡Hola Drift Ibiza! Quería información sobre una experiencia en moto de agua 🌊",
+};
+
+const translations = {
+  it: {
+    meta_title: "Drift Ibiza — Esperienze private in moto d'acqua a Ibiza",
+    meta_desc:  "Esperienze private in moto d'acqua a Ibiza. Sea-Doo RXTx 300, fino a 3 persone. Prenota su WhatsApp.",
+    hero_eyebrow:    "SEA-DOO RXTX 300 · SANTA EULALIA · IBIZA",
+    hero_title_main: "Ibiza come non l'hai mai",
+    hero_title_em:   "vissuta",
+    hero_sub:   "La tua ora di libertà sul mare",
+    cta_wa:     "Scrivici su WhatsApp",
+    sticky_cta: "Scrivici ora",
+    stat1_label: "Motore",   stat2_label: "Persone",
+    stat3_label: "Privato",  stat4_label: "a persona",
+    exp_title:  "L'Esperienza",
+    exp1_label: "Libertà",   exp1_desc: "Nessun percorso fisso. Vai dove ti porta il mare.",
+    exp2_label: "Velocità",  exp2_desc: "Un Sea-Doo RXTx 300. Potenza pura sull'acqua.",
+    exp3_label: "Tramonto",  exp3_desc: "L'ora d'oro di Ibiza, vista dal mare. Indimenticabile.",
+    pkg_title:  "Scegli la tua esperienza",
+    pkg_sub:    "Prezzo per la moto, fino a 3 persone",
+    pkg_badge:  "Il più scelto",
+    pkg_cta:    "Prenota su WhatsApp",
+    pkg_custom_text: "Cerchi altro? Scrivici per un'esperienza su misura.",
+    pkg_custom_cta:  "Scrivici",
+    pkg1_name: "Taste",    pkg1_dur: "30 minuti",   pkg1_desc: "Un assaggio veloce di libertà",
+    pkg2_name: "Classic",  pkg2_dur: "1 ora",        pkg2_desc: "L'esperienza completa",
+    pkg3_name: "Extended", pkg3_dur: "1 ora e 30",   pkg3_desc: "Più tempo, più mare, più tramonto",
+    how_title:  "Come funziona",
+    how1_label: "Scrivi",  how1_desc: "Mandaci un messaggio su WhatsApp con il giorno che preferisci.",
+    how2_label: "Scegli",  how2_desc: "Concordiamo orario, durata e punto d'incontro.",
+    how3_label: "Vivi",    how3_desc: "Ti aspettiamo sul mare. Pensa solo a goderti Ibiza.",
+    det_title:  "Dettagli pratici",
+    det1: "Sea-Doo RXTx 300, fino a 3 persone.",
+    det2: "Base a Santa Eulalia — ti raggiungiamo nella zona che preferisci.",
+    det3: "Guida tu o lasciati accompagnare: ti spieghiamo tutto.",
+    proof_title: "Le nostre esperienze",
+    cta_title:   "Pronto a partire?",
+    footer_tagline: "Esperienze private sul mare",
+    footer_follow:  "Seguici su",
+  },
+  en: {
+    meta_title: "Drift Ibiza — Private Jet Ski Experiences in Ibiza",
+    meta_desc:  "Private jet ski experiences in Ibiza. Sea-Doo RXTx 300, up to 3 people. Book via WhatsApp.",
+    hero_eyebrow:    "SEA-DOO RXTX 300 · SANTA EULALIA · IBIZA",
+    hero_title_main: "Ibiza like you've never",
+    hero_title_em:   "experienced it",
+    hero_sub:   "Your hour of freedom on the sea",
+    cta_wa:     "Message us on WhatsApp",
+    sticky_cta: "Chat now",
+    stat1_label: "Engine",    stat2_label: "People",
+    stat3_label: "Private",   stat4_label: "per person",
+    exp_title:  "The Experience",
+    exp1_label: "Freedom",  exp1_desc: "No fixed route. Go where the sea takes you.",
+    exp2_label: "Speed",    exp2_desc: "A Sea-Doo RXTx 300. Pure power on the water.",
+    exp3_label: "Sunset",   exp3_desc: "Ibiza's golden hour, seen from the sea. Unforgettable.",
+    pkg_title:  "Choose your experience",
+    pkg_sub:    "Price per jet ski, up to 3 people",
+    pkg_badge:  "Most popular",
+    pkg_cta:    "Book on WhatsApp",
+    pkg_custom_text: "Looking for something else? Message us for a custom experience.",
+    pkg_custom_cta:  "Message us",
+    pkg1_name: "Taste",    pkg1_dur: "30 minutes", pkg1_desc: "A quick taste of freedom",
+    pkg2_name: "Classic",  pkg2_dur: "1 hour",     pkg2_desc: "The full experience",
+    pkg3_name: "Extended", pkg3_dur: "1.5 hours",  pkg3_desc: "More time, more sea, more sunset",
+    how_title:  "How it works",
+    how1_label: "Message", how1_desc: "Send us a WhatsApp with your preferred day.",
+    how2_label: "Choose",  how2_desc: "We agree on time, duration and meeting point.",
+    how3_label: "Ride",    how3_desc: "We'll be waiting on the water. Just enjoy Ibiza.",
+    det_title:  "Practical details",
+    det1: "Sea-Doo RXTx 300, up to 3 people.",
+    det2: "Based in Santa Eulalia — we reach the area you prefer.",
+    det3: "Drive yourself or be accompanied: we'll show you everything.",
+    proof_title: "Our experiences",
+    cta_title:   "Ready to ride?",
+    footer_tagline: "Private experiences on the sea",
+    footer_follow:  "Follow us on",
+  },
+  es: {
+    meta_title: "Drift Ibiza — Experiencias privadas en moto de agua en Ibiza",
+    meta_desc:  "Experiencias privadas en moto de agua en Ibiza. Sea-Doo RXTx 300, hasta 3 personas. Reserva por WhatsApp.",
+    hero_eyebrow:    "SEA-DOO RXTX 300 · SANTA EULALIA · IBIZA",
+    hero_title_main: "Ibiza como nunca la has",
+    hero_title_em:   "vivido",
+    hero_sub:   "Tu hora de libertad en el mar",
+    cta_wa:     "Escríbenos por WhatsApp",
+    sticky_cta: "Escríbenos",
+    stat1_label: "Motor",     stat2_label: "Personas",
+    stat3_label: "Privado",   stat4_label: "por persona",
+    exp_title:  "La Experiencia",
+    exp1_label: "Libertad",  exp1_desc: "Sin ruta fija. Ve donde te lleve el mar.",
+    exp2_label: "Velocidad", exp2_desc: "Una Sea-Doo RXTx 300. Potencia pura sobre el agua.",
+    exp3_label: "Atardecer", exp3_desc: "La hora dorada de Ibiza, desde el mar. Inolvidable.",
+    pkg_title:  "Elige tu experiencia",
+    pkg_sub:    "Precio por moto, hasta 3 personas",
+    pkg_badge:  "El más elegido",
+    pkg_cta:    "Reservar por WhatsApp",
+    pkg_custom_text: "¿Buscas otra cosa? Escríbenos para una experiencia a medida.",
+    pkg_custom_cta:  "Escríbenos",
+    pkg1_name: "Taste",    pkg1_dur: "30 minutos",  pkg1_desc: "Un toque rápido de libertad",
+    pkg2_name: "Classic",  pkg2_dur: "1 hora",       pkg2_desc: "La experiencia completa",
+    pkg3_name: "Extended", pkg3_dur: "1 hora y 30",  pkg3_desc: "Más tiempo, más mar, más atardecer",
+    how_title:  "Cómo funciona",
+    how1_label: "Escribe",  how1_desc: "Mándanos un WhatsApp con el día que prefieras.",
+    how2_label: "Elige",    how2_desc: "Acordamos hora, duración y punto de encuentro.",
+    how3_label: "Disfruta", how3_desc: "Te esperamos en el mar. Solo disfruta de Ibiza.",
+    det_title:  "Detalles prácticos",
+    det1: "Sea-Doo RXTx 300, hasta 3 personas.",
+    det2: "Base en Santa Eulalia — llegamos a la zona que prefieras.",
+    det3: "Conduce tú o déjate acompañar: te lo explicamos todo.",
+    proof_title: "Nuestras experiencias",
+    cta_title:   "¿Listo para salir?",
+    footer_tagline: "Experiencias privadas en el mar",
+    footer_follow:  "Síguenos en",
+  },
+};
+
+/* ─── LANGUAGE ──────────────────────────────────────────────── */
+function detectLang() {
+  var stored = localStorage.getItem('drift-lang');
+  if (stored && translations[stored]) return stored;
+  var browser = (navigator.language || 'en').slice(0, 2).toLowerCase();
+  return translations[browser] ? browser : 'en';
+}
+
+function applyLang(lang) {
+  var t = translations[lang];
+  var els = document.querySelectorAll('[data-i18n]');
+  els.forEach(function(el) { el.classList.add('lang-fade'); });
+  setTimeout(function() {
+    document.documentElement.lang = lang;
+    localStorage.setItem('drift-lang', lang);
+    els.forEach(function(el) {
+      var key = el.dataset.i18n;
+      if (t[key] !== undefined) el.textContent = t[key];
+      el.classList.remove('lang-fade');
+    });
+    document.title = t.meta_title;
+    var metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.content = t.meta_desc;
+    var waConfigured = WHATSAPP_NUMBER !== '[NUMERO_WHATSAPP]';
+    var waUrl = waConfigured
+      ? 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(WA_MESSAGES[lang])
+      : '#';
+    document.querySelectorAll('[data-whatsapp]').forEach(function(el) {
+      el.href = waUrl;
+      if (!waConfigured) { el.setAttribute('aria-disabled', 'true'); el.title = 'WhatsApp number not configured'; }
+      else { el.removeAttribute('aria-disabled'); el.removeAttribute('title'); }
+    });
+    document.querySelectorAll('.lang-btn').forEach(function(btn) {
+      var active = btn.dataset.lang === lang;
+      btn.classList.toggle('lang-btn--active', active);
+      btn.setAttribute('aria-current', active ? 'true' : 'false');
+    });
+    // Split hero title into animated words once text is in the correct language
+    if (!blurTextDone) { blurTextDone = true; initBlurText(); }
+  }, 180);
+}
+
+/* ─── FADING VIDEO ──────────────────────────────────────────── */
+function initFadingVideo() {
+  var video = document.getElementById('hero-video');
+  if (!video) return;
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduced) { video.style.opacity = '1'; video.loop = true; return; }
+
+  function fade(to, ms) {
+    var from = parseFloat(video.style.opacity) || 0;
+    var start = performance.now();
+    function step(now) {
+      var p = Math.min((now - start) / ms, 1);
+      video.style.opacity = (from + (to - from) * p).toFixed(3);
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var fadingOut = false, fadedIn = false;
+  function fadeIn() { if (fadedIn) return; fadedIn = true; fade(1, 500); }
+  video.addEventListener('loadeddata', fadeIn);
+  video.addEventListener('canplay', fadeIn);
+  video.addEventListener('playing', fadeIn);
+  video.addEventListener('timeupdate', function() {
+    if (!video.duration) return;
+    if (!fadedIn) fadeIn();
+    var remaining = video.duration - video.currentTime;
+    if (remaining <= 0.8 && !fadingOut) { fadingOut = true; fade(0, 600); }
+  });
+  video.addEventListener('ended', function() {
+    video.currentTime = 0;
+    var play = video.play();
+    if (play && play.catch) play.catch(function() {});
+    fadingOut = false;
+    fade(1, 500);
+  });
+  if (video.readyState >= 2) fadeIn();
+  // Safety net: never leave the hero video invisible
+  setTimeout(fadeIn, 1500);
+}
+
+/* ─── BLUR TEXT (hero title word-by-word) ───────────────────── */
+var blurTextDone = false;
+function initBlurText() {
+  var title = document.querySelector('.hero-title');
+  if (!title) return;
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var parts = title.querySelectorAll('[data-i18n]');
+  var index = 0;
+  var words = [];
+  parts.forEach(function(part) {
+    var text = part.textContent.trim();
+    part.textContent = '';
+    text.split(/\s+/).forEach(function(word, i, arr) {
+      var span = document.createElement('span');
+      span.className = 'blur-word';
+      span.textContent = word;
+      span.style.transitionDelay = (index * 80) + 'ms';
+      part.appendChild(span);
+      if (i < arr.length - 1) part.appendChild(document.createTextNode(' '));
+      words.push(span);
+      index++;
+    });
+  });
+  if (reduced) { words.forEach(function(w) { w.classList.add('in'); }); return; }
+  var io = new IntersectionObserver(function(entries) {
+    if (entries[0].isIntersecting) {
+      words.forEach(function(w) { w.classList.add('in'); });
+      io.disconnect();
+    }
+  }, { threshold: 0.1 });
+  io.observe(title);
+}
+
+/* ─── HERO LOAD-IN ──────────────────────────────────────────── */
+function initHeroLoadIn() {
+  var subtitle = document.querySelector('.hero-sub.hero-load');
+  var cta = document.querySelector('.hero-cta.hero-load');
+  if (subtitle) setTimeout(function() { subtitle.classList.add('hero-load--in'); }, 550);
+  if (cta) setTimeout(function() { cta.classList.add('hero-load--in'); }, 750);
+}
+
+/* ─── HEADER ON SCROLL ──────────────────────────────────────── */
+function initHeader() {
+  var header = document.getElementById('site-header');
+  if (!header) return;
+  var ticking = false;
+  function update() {
+    var scrolled = window.scrollY > 60;
+    header.classList.toggle('site-header--scrolled', scrolled);
+    header.classList.toggle('liquid-glass', scrolled);
+    ticking = false;
+  }
+  window.addEventListener('scroll', function() {
+    if (ticking) return;
+    requestAnimationFrame(update);
+    ticking = true;
+  }, { passive: true });
+  update();
+}
+
+/* ─── SCROLL INDICATOR HIDE ─────────────────────────────────── */
+function initScrollIndicator() {
+  var indicator = document.getElementById('hero-scroll-indicator');
+  var target = document.querySelector('.stats-strip') || document.querySelector('.experience');
+  if (!indicator || !target) return;
+  new IntersectionObserver(function(entries) {
+    if (entries[0].isIntersecting) indicator.classList.add('hidden');
+  }, { threshold: 0.1 }).observe(target);
+}
+
+/* ─── STICKY WA ─────────────────────────────────────────────── */
+/* ─── PACKAGE SELECTION ─────────────────────────────────────── */
+function initPkgSelect() {
+  var cards = document.querySelectorAll('.pkg-card[data-pkg]');
+  var ctaWrap = document.getElementById('pkg-cta-wrap');
+  if (!cards.length || !ctaWrap) return;
+  cards.forEach(function(card) {
+    card.addEventListener('click', function() {
+      // deselect all
+      cards.forEach(function(c) { c.classList.remove('pkg-selected'); });
+      // select this
+      card.classList.add('pkg-selected');
+      // update WA message to include package name
+      var pkgName = card.querySelector('.pkg-name');
+      var name = pkgName ? pkgName.textContent.trim() : '';
+      var btn = document.getElementById('pkg-cta-btn');
+      if (btn && window.WHATSAPP_NUMBER && window.WHATSAPP_NUMBER !== '[NUMERO_WHATSAPP]') {
+        var msgs = { it: 'Ciao! Sono interessato al pacchetto ' + name + '. Quando è disponibile?',
+                     en: 'Hi! I\'m interested in the ' + name + ' package. When is it available?',
+                     es: '¡Hola! Estoy interesado en el paquete ' + name + '. ¿Cuándo está disponible?' };
+        var lang = localStorage.getItem('drift_lang') || 'it';
+        btn.href = 'https://wa.me/' + window.WHATSAPP_NUMBER + '?text=' + encodeURIComponent(msgs[lang] || msgs.it);
+      }
+      // show CTA
+      ctaWrap.classList.add('pkg-cta-wrap--visible');
+      // smooth scroll to CTA
+      setTimeout(function() { ctaWrap.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }, 50);
+    });
+  });
+}
+
+function initStickyWa() {
+  var heroCta = document.querySelector('.hero-cta');
+  var sticky  = document.getElementById('sticky-wa');
+  if (!heroCta || !sticky) return;
+  new IntersectionObserver(function(entries) {
+    sticky.classList.toggle('sticky-wa--visible', !entries[0].isIntersecting);
+  }, { threshold: 0 }).observe(heroCta);
+}
+
+/* ─── SCROLL REVEAL ─────────────────────────────────────────── */
+function initReveal() {
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = document.querySelectorAll('.reveal, .reveal-right');
+  if (reduced) {
+    els.forEach(function(el) { el.classList.add('reveal--visible'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('reveal--visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(function(el) { io.observe(el); });
+}
+
+/* ─── HERO PARALLAX ─────────────────────────────────────────── */
+function initParallax() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var content = document.querySelector('.hero-content');
+  if (!content) return;
+  var ticking = false;
+  window.addEventListener('scroll', function() {
+    if (ticking) return;
+    requestAnimationFrame(function() {
+      var y = window.scrollY;
+      content.style.transform = 'translateY(' + (y * 0.28) + 'px)';
+      content.style.opacity   = Math.max(0, 1 - y / 520);
+      ticking = false;
+    });
+    ticking = true;
+  }, { passive: true });
+}
+
+/* ─── STATS COUNT-UP ────────────────────────────────────────── */
+function initCountUp() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var nums = document.querySelectorAll('.stat-num');
+  if (!nums.length) return;
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (!entry.isIntersecting) return;
+      var el = entry.target;
+      var target = parseInt(el.dataset.count, 10);
+      var duration = 1100;
+      var start = performance.now();
+      function tick(now) {
+        var elapsed = now - start;
+        var progress = Math.min(elapsed / duration, 1);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.round(target * eased);
+        if (progress < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+      io.unobserve(el);
+    });
+  }, { threshold: 0.6 });
+  nums.forEach(function(el) { io.observe(el); });
+}
+
+/* ─── CUSTOM CURSOR ─────────────────────────────────────────── */
+function initCursor() {
+  if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+  var dot = document.getElementById('cursor-dot');
+  if (!dot) return;
+  var cx = 0, cy = 0, mx = window.innerWidth / 2, my = window.innerHeight / 2;
+  document.addEventListener('mousemove', function(e) { mx = e.clientX; my = e.clientY; });
+  function lerp(a, b, t) { return a + (b - a) * t; }
+  function loop() {
+    cx = lerp(cx, mx, 0.12);
+    cy = lerp(cy, my, 0.12);
+    dot.style.transform = 'translate(' + cx + 'px,' + cy + 'px)';
+    requestAnimationFrame(loop);
+  }
+  loop();
+  document.querySelectorAll('a, button').forEach(function(el) {
+    el.addEventListener('mouseenter', function() { dot.classList.add('cursor-dot--hover'); });
+    el.addEventListener('mouseleave', function() { dot.classList.remove('cursor-dot--hover'); });
+  });
+  document.addEventListener('mouseleave', function() { dot.style.opacity = '0'; });
+  document.addEventListener('mouseenter', function() { dot.style.opacity = '1'; });
+}
+
+/* ─── SMOOTH SCROLL ─────────────────────────────────────────── */
+function initSmoothScroll() {
+  document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      var id = a.getAttribute('href').slice(1);
+      if (!id) return;
+      var target = document.getElementById(id);
+      if (!target) return;
+      e.preventDefault();
+      var startY = window.scrollY;
+      var endY = target.getBoundingClientRect().top + window.scrollY;
+      var duration = 700;
+      var startTime = performance.now();
+      function tick(now) {
+        var t = Math.min((now - startTime) / duration, 1);
+        var eased = t < 0.5 ? 4*t*t*t : 1 - Math.pow(-2*t + 2, 3) / 2;
+        window.scrollTo(0, startY + (endY - startY) * eased);
+        if (t < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    });
+  });
+}
+
+/* ─── INIT ───────────────────────────────────────────────────── */
+document.addEventListener('DOMContentLoaded', function() {
+  applyLang(detectLang());
+  document.querySelectorAll('.lang-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() { applyLang(btn.dataset.lang); });
+  });
+  initFadingVideo();
+  initHeroLoadIn();
+  initHeader();
+  initScrollIndicator();
+  initPkgSelect();
+  initStickyWa();
+  initReveal();
+  initParallax();
+  initCountUp();
+  initCursor();
+  initSmoothScroll();
+});
+</script>
+</body>
+</html>
